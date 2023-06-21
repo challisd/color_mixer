@@ -3,10 +3,10 @@
 def mix_colors(colors, degrees):
     a = r = g = b = 0
     for i in range(0,len(degrees)):
-        a = a + colors[i][3]*degrees[i]
-        r = r + colors[i][0]*degrees[i]
-        g = g + colors[i][1]*degrees[i]
-        b = b + colors[i][2]*degrees[i]
+        a = a + colors[i][3] * degrees[i]
+        r = r + colors[i][0] * degrees[i]
+        g = g + colors[i][1] * degrees[i]
+        b = b + colors[i][2] * degrees[i]
     d = sum(degrees)
     return((r/d,g/d,b/d,a/d))
 
